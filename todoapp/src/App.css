@@ -1,0 +1,56 @@
+.todo-container {
+  width: 100%;
+  max-width: 36rem;
+  background-color: white;
+  padding: 1.5rem; 
+  border-radius: 1rem; 
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); 
+}
+
+.add-todo-form {
+  display: flex;
+  gap: 0.5rem;         /* gap-2 = 8px */
+  margin-bottom: 1rem; /* mb-4 = 16px */
+}
+
+.add-todo-input {
+  flex: 1;
+  padding: 0.5rem;               /* p-2 = 8px */
+  border: 1px solid #D1D5DB;     /* border-gray-300 */
+  border-radius: 0.25rem;        /* rounded */
+}
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f3f4f6; /* bg-gray-100 */
+  padding: 0.75rem;          /* p-3 = 12px */
+  border-radius: 0.25rem;    /* rounded = 4px */
+}
+.completed-task {
+  text-decoration: line-through;
+  color: #16a34a; /* text-green-600 */
+}
+.delete-button {
+  color: #dc2626; /* text-red-600 */
+  font-weight: 600; /* font-semibold */
+  transition: color 0.2s;
+}
+
+.delete-button:hover {
+  color: #991b1b; /* text-red-800 */
+}
+.no-tasks-message {
+  color: #6b7280; /* text-gray-500 */
+}
+
+.todo-list > * + * {
+  margin-top: 0.5rem; /* space-y-2 */
+}
+.app-wrapper {
+  min-height: 100vh;            /* min-h-screen */
+  background-color: #f3f4f6;    /* bg-gray-100 */
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem;              /* p-10 = 40px */
+}
